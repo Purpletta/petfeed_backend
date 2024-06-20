@@ -37,13 +37,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework_simplejwt',
+    'drf_yasg',
+    'rest_framework.authtoken',
     'articles',
-    'drf_yasg'
+    'authorisation',
+
 ]
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
+
 }
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -81,9 +87,9 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'petfeed_db',
+        'NAME': 'petgeed',
         'USER': 'postgres',
-        'PASSWORD': 'parol12345',
+        'PASSWORD': 'prowarrior77',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
