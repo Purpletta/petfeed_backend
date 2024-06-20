@@ -42,6 +42,11 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'articles',
     'authorisation',
+    'foods',
+    'pet_feeds',
+    'pets',
+    'settings_',
+    'weight_records',
 
 ]
 REST_FRAMEWORK = {
@@ -87,9 +92,9 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'petgeed',
+        'NAME': 'petfeed_db',
         'USER': 'postgres',
-        'PASSWORD': 'prowarrior77',
+        'PASSWORD': 'parol12345',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
